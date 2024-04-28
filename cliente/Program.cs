@@ -1,4 +1,4 @@
-﻿using Grpc.Core;
+using Grpc.Core;
 using Grpc.Net.Client;
 using System.Media;
 using static AudioService;
@@ -22,7 +22,7 @@ static async Task<MemoryStream> descargarStreamAsync(AudioServiceClient stub, st
             await writeStream.WriteAsync(bytes);
         }
     }
-    Console.WriteLine("\nRececpció de datos correcta.\n\n");
+    Console.WriteLine("\nRececpción de datos correcta.\n\n");
 
     return writeStream;
 }

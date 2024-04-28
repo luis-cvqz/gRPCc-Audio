@@ -3,7 +3,7 @@ using Google.Protobuf;
 
 public class AudioServicer : AudioService.AudioServiceBase
 {
-    private const int ChunkSize = 1020;
+    private const int ChunkSize = 1024;
 
     public override async Task downloadAudio(DownloadFileRequest request, IServerStreamWriter<DataChunkResponse> responseStream, ServerCallContext context)
     {
@@ -23,7 +23,6 @@ public class AudioServicer : AudioService.AudioServiceBase
                 Console.Write(".");
             }
         }
-        catch
-        {}
+        catch { }
     }
 }
