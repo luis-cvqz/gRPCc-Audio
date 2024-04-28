@@ -38,7 +38,7 @@ static void playStream(MemoryStream stream, string nombre_archivo)
     }
 }
 
-using var channel = GrpcChannel.ForAddress("https://localhost:8080");
+using var channel = GrpcChannel.ForAddress("http://localhost:8080");
 AudioServiceClient stub = new(channel);
 
 string nombre_archivo = "sample.wav";
