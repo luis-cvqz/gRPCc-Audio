@@ -1,3 +1,5 @@
+.vscode
+
 cliente/.vscode
 cliente/bin/*
 cliente/obj/*
