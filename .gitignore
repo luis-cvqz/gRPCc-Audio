@@ -1,0 +1,8 @@
+cliente/.vscode
+cliente/bin/*
+cliente/obj/*
+
+servidor/.vscode
+servidor/bin/*
+servidor/obj/*
+servidor/resources/*
