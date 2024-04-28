@@ -8,7 +8,7 @@ public class AudioServicer : AudioService.AudioServiceBase
     public override async Task downloadAudio(DownloadFileRequest request, IServerStreamWriter<DataChunkResponse> responseStream, ServerCallContext context)
     {
         var buffer = new byte[ChunkSize];
-        await using var fileStream = File.OpenRead($"resources/{request.Nombre}");
+        await using var fileStream = File.OpenRead($"resources\\{request.Nombre}");
         var numBytesRead = 0;
 
         Console.WriteLine($"\n\nEnviando el archivo: {request.Nombre}");

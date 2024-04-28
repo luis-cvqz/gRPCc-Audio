@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf Include="proto/audio.proto" GrpcServices="Server" />
+    <Protobuf Include="proto\audio.proto" GrpcServices="Server" />
   </ItemGroup>
 
 </Project>

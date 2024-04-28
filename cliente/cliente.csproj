@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Protobuf Include="proto/audio.proto" GrpcServices="Client" />
+    <Protobuf Include="proto\audio.proto" GrpcServices="Client" />
   </ItemGroup>
 
   <ItemGroup>
